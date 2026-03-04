@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Michael Jace | Full Stack Developer & Creative Technologist. Building digital experiences that dominate markets since 2019. Based in Nigeria." />
+  <meta property="og:title" content="Jace Dev | Michael - Full Stack Developer & Creative Technologist" />
+  <meta property="og:description" content="Award-winning full stack developer crafting immersive web experiences, AI solutions, and mobile applications since 2019." />
+  <meta property="og:image" content="https://i.ibb.co/DD0qQcxh/3190-A108-2213-4-F4-E-AC45-86-F0-C2-DE56-CB.jpg" />
+  <meta name="google-site-verification" content="wobbMDC1LVk_kgdft6XX5PPnm7q3nodja7fV9axotWU" />
+
+  <title>Jace Dev | Michael - Full Stack Developer & Creative Technologist</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+  <link rel="stylesheet" href="/src/styles/animations.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
+
+  <!-- WebGL Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-text" data-text="JACE DEV">JACE DEV</div>
+    <div class="loader-bar"><div class="loader-progress"></div></div>
+    <div class="loader-subtitle">Loading Experience</div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button id="close-menu" class="close-menu-btn"><i class="fa-solid fa-times"></i></button>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#social">Connect</a>
+    <a href="#contact">Contact</a>
+    <div class="mobile-socials">
+      <a href="https://x.com/MikeDarasimi" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://tiktok.com/@micheal_jace" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://wa.me/2348101393153" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <a href="#" class="nav-logo">JACE<span class="accent-dot">.</span></a>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#social" class="nav-link">Connect</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <div class="nav-socials">
+        <a href="https://x.com/MikeDarasimi" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://tiktok.com/@micheal_jace" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      <a href="https://wa.me/2348101393153" target="_blank" class="nav-cta">Let's Talk</a>
+    </div>
+    <button id="menu-btn" class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <!-- Sections injected by JS -->
+  <div id="app"></div>
+
+  <!-- Main JS entry -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
